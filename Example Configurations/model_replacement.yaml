@@ -1,0 +1,39 @@
+repeat_experiment: 10
+model: lenet5
+dataset: mnist
+num_rounds: 100
+num_clients: 20
+batch_size: 64
+num_clients_per_round_fit: 20
+num_clients_per_round_eval: 20
+aggregation_strategy: FedAvg
+seed: 42
+config_fit:
+  lr: 0.01
+  momentum: 0.9
+  local_epochs: 2
+partitioning:
+  non_iid: true
+  type: label-skew
+  label-skew:
+    method: dirichlet
+    alpha: 0.5
+attacks:
+  cba:
+    enabled: true
+    malicious_client_fraction: 0.1
+    source_label: 4
+    target_label: 7
+    trigger_value: 255
+    trigger_position:
+    - - 26
+      - 26
+    poisoning_ratio: 1
+
+  model_replacement:
+    enabled: true
+    malicious_client_fraction: 0.1
+    active_rounds: {start: 80, end: 100, every: 1}
+
+
+

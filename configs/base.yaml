@@ -1,0 +1,21 @@
+repeat_experiment: 3
+model: lenet5
+dataset: mnist
+num_rounds: 100
+num_clients: 20
+batch_size: 64
+num_clients_per_round_fit: 20
+num_clients_per_round_eval: 20
+aggregation_strategy: FedAvg
+seed: [42,50,60]
+config_fit:
+  lr: 0.01
+  momentum: 0.9
+  local_epochs: 2
+partitioning:
+  non_iid: true
+  type: label-skew
+  label-skew:
+    method: dirichlet
+    alpha: 0.2
+attacks:

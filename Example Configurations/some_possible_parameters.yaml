@@ -1,0 +1,79 @@
+
+repeat_experiment: int
+num_rounds: int
+num_clients: int
+batch_size: int (typically between 32 and 512)
+num_clients_per_round_fit: int # number of clients for training
+num_clients_per_round_eval: int # number of clients for evaluation
+seed: int or list with 'repeat_experiment' number of int values
+config_fit:
+  lr: float
+  momentum: float 
+  local_epochs: int
+
+
+model: 
+
+lenet5, 
+resnet18,
+mobilenetv3-small,
+mobilenetv3-large,
+vgg11,
+vgg13,
+vgg16,
+vgg19,
+efficientnet
+
+
+dataset:
+
+mnist,
+fashion-mnist or fmnist,
+cifar10,
+pathmnist,
+dermamnist
+
+aggregation_strategy: 
+
+FedAvg, 
+Krum,
+MultiKrum,
+FedAdam,
+FedOpt,
+FedAvgM,
+FedTrimmedAvg,
+NormClipFedAvg,
+FedMedian,
+SimpleClustering,
+
+
+
+
+
+partitioning:
+  # 1.) IID
+  non_iid: false
+  # 2.) Pathological Label-Skew
+  non_iid: true
+  type: label-skew
+
+  label-skew:
+    method: pathological
+    classes_per_client: 2
+
+  # 3.) Dirichlet Label-Skew
+  non_iid: true
+  type: label-skew
+
+  label-skew:
+    method: dirichlet 
+    alpha: 0.5
+
+  # 4.) Feature-Skew
+  non_iid: true
+  type: feature-skew
+
+  feature-skew:
+    variations:
+      brightness: [0.7, 1.3]
+      rotation: [-10, 10]

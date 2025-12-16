@@ -40,7 +40,7 @@ This text provides an overview of the features of our framework and all the info
 |   **FL Algorithms**   |                                                                FedAvg,Krum, MultiKrum, FedAdam, FedOpt, FedAvgM, FedTrimmedAvg, NormClipFedAvg, FedMedian, SimpleClustering                                                          |
 | **Data Distribution** |  IID, Pathological Label-Skew, Dirichlet Label-Skew, Feature-Skew  |
 |     **Datasets**      |                                    MNIST, FashionMNIST, CIFAR10, PathMNIST, DermaMNIST                                    |
-|      **Models**       | Lenet5,Resnet18, MobilenetV3-small, MobilenetV3-large, Vgg11, Vgg13, Vgg16, Vgg19, Efficientnet-b0, Efficientnet-b1, Efficientnet-b2 |
+|      **Models**       | [Lenet5](https://ieeexplore.ieee.org/document/726791),[Resnet18](https://arxiv.org/abs/1512.03385), [MobilenetV3-small](https://arxiv.org/abs/1905.02244), [MobilenetV3-large](https://arxiv.org/abs/1905.02244), [Vgg11/13/16/19](https://arxiv.org/abs/1409.1556), [Efficientnet-b0/b1/b2](https://arxiv.org/abs/1905.11946),  |
 |      **Attacks**       | [Label Flipping](https://arxiv.org/abs/1206.6389), [Sign Flipping Attack](https://arxiv.org/abs/2502.03801), [Gaussian Random Attack](https://papers.nips.cc/paper_files/paper/2017/hash/f4b9ec30ad9f68f89b29639786cb62ef-Abstract.html), [Centralized Backdoor Attack](https://arxiv.org/abs/1807.00459), [Decentralized Backdoor Attack](https://openreview.net/forum?id=rkgyS0VFvr), [Model Replacement Attack](https://arxiv.org/abs/1807.00459), Direct Model Scaling Attack, Model Initialization Attack |
 
 

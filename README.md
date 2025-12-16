@@ -95,8 +95,17 @@ This benchmark uses the following publicly available datasets:
 - [**CIFAR-10**](https://www.cs.toronto.edu/~kriz/learning-features-2009-TR.pdf) (Krizhevsky et al.), available for academic research use  
 - [**PathMNIST**](https://medmnist.com/) (Yang et al.), licensed under the Creative Commons Attribution 4.0 International (CC BY 4.0)
 - [**DermaMNIST**](https://medmnist.com/) (Yang et al.), licensed under the Creative Commons Attribution-NonCommercial 4.0 International (CC BY-NC 4.0)
+- 
+The datasets are **not redistributed** in this repository and are obtained from their official sources.
 
-The datasets are not redistributed in this repository and are obtained from their official sources.
+### Models
+- **EfficientNet-b0/b1/b2** (Torchvision, BSD-3-Clause) — architecture used via Torchvision, all weights trained from scratch
+- **LeNet5** — architecture implemented following LeCun et al., 1998, all weights trained from scratch
+- **MobileNetV3-small/large** (Torchvision, BSD-3-Clause) — architecture used via Torchvision, all weights trained from scratch
+- **ResNet18** — custom PyTorch implementation following He et al., 2016, all weights trained from scratch
+- **VGG11/13/16/19** (Torchvision, BSD-3-Clause) — architecture used via Torchvision, all weights trained from scratch
+
+
 
 ## Third-Party Frameworks
 

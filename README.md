@@ -81,3 +81,21 @@ If you choose VGG as the model you need to turn off gpu training, because these 
 If you are using FLPoison for your work, please cite our paper with:
 
 
+## Licenses and Third-Party Resources
+
+### Project License
+The code in this repository is released under the Apache 2.0 License (see LICENSE file).
+
+### Datasets
+This benchmark uses the following publicly available datasets:
+
+- [**MNIST**](http://yann.lecun.com/exdb/mnist/) (LeCun et al.), licensed under the Creative Commons Attribution-Share Alike 3.0  
+- [**Fashion-MNIST**](https://arxiv.org/abs/1708.07747) (Han Xiao, Kashif Rasul, Roland Vollgraf
+), licensed under the MIT License (MIT) Copyright © [2017] Zalando SE, https://tech.zalando.com
+- [**CIFAR-10**](https://www.cs.toronto.edu/~kriz/learning-features-2009-TR.pdf) (Krizhevsky et al.), available for academic research use  
+- [**PathMNIST**](https://medmnist.com/) (Yang et al.), licensed under the Creative Commons Attribution 4.0 International (CC BY 4.0)
+- [**DermaMNIST**](https://medmnist.com/) (Yang et al.), licensed under the Creative Commons Attribution-NonCommercial 4.0 International (CC BY-NC 4.0)
+
+
+The datasets are not redistributed in this repository and are obtained from their official sources.
+

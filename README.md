@@ -41,7 +41,7 @@ This text provides an overview of the features of our framework and all the info
 | **Data Distribution** |  IID, Pathological Label-Skew, Dirichlet Label-Skew, Feature-Skew  |
 |     **Datasets**      |                                    MNIST, FashionMNIST, CIFAR10, PathMNIST, DermaMNIST                                    |
 |      **Models**       | Lenet5,Resnet18, MobilenetV3-small, MobilenetV3-large, Vgg11, Vgg13, Vgg16, Vgg19, Efficientnet-b0, Efficientnet-b1, Efficientnet-b2 |
-|      **Attacks**       | Label Flipping, Sign Flipping Attack, Gaussian Random Attack, Centralized Backdoor Attack, Decentralized Backdoor Attack, Model Replacement Attack, Direct Model Scaling Attack, Model Initialization Attack |
+|      **Attacks**       | [Label Flipping](https://arxiv.org/abs/1206.6389), [Sign Flipping Attack](https://arxiv.org/abs/2502.03801), [Gaussian Random Attack](https://papers.nips.cc/paper_files/paper/2017/hash/f4b9ec30ad9f68f89b29639786cb62ef-Abstract.html), [Centralized Backdoor Attack](https://arxiv.org/abs/1807.00459), [Decentralized Backdoor Attack](https://openreview.net/forum?id=rkgyS0VFvr), [Model Replacement Attack](https://arxiv.org/abs/1807.00459), Direct Model Scaling Attack, Model Initialization Attack |
 
 
 
@@ -109,6 +109,16 @@ The datasets are **not redistributed** in this repository and are obtained from 
 Aggregation methods are implemented from scratch or using Flower (Apache 2.0). All custom implementations are released under the Apache 2.0 License.
 
 ### Poisoning Attacks
+|-------------|
+| Label Flipping (Biggio et al., 2012) |
+| Sign Flipping Attack (Shejwalkar et al., 2024) |
+| Gaussian Random Attack (Blanchard et al., 2017) |
+| Centralized Backdoor Attack (Bagdasaryan et al., 2018) |
+| Decentralized Backdoor Attack (Xie et al., 2020) |
+| Model Replacement Attack (Bagdasaryan et al., 2018) |
+| Direct Model Scaling Attack (custom implementation) |
+| Model Initialization Attack (custom implementation) |
+
 All poisoning attacks are implemented from scratch in this framework, following the methodologies described in the respective publications. Released under Apache 2.0.
 
 

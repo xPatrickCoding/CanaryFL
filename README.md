@@ -109,17 +109,20 @@ The datasets are **not redistributed** in this repository and are obtained from 
 Aggregation methods are implemented from scratch or using Flower (Apache 2.0). All custom implementations are released under the Apache 2.0 License.
 
 ### Poisoning Attacks
-|-------------|
-| Label Flipping (Biggio et al., 2012) |
-| Sign Flipping Attack (Shejwalkar et al., 2024) |
-| Gaussian Random Attack (Blanchard et al., 2017) |
-| Centralized Backdoor Attack (Bagdasaryan et al., 2018) |
-| Decentralized Backdoor Attack (Xie et al., 2020) |
-| Model Replacement Attack (Bagdasaryan et al., 2018) |
-| Direct Model Scaling Attack (custom implementation) |
-| Model Initialization Attack (custom implementation) |
+
+| Attack | Source / Notes |
+|--------|----------------|
+| Label Flipping | Biggio et al., 2012 ([link](https://arxiv.org/abs/1206.6389)) |
+| Sign Flipping Attack | Shejwalkar et al., 2024 ([link](https://arxiv.org/abs/2502.03801)) |
+| Gaussian Random Attack | Blanchard et al., 2017 ([link](https://papers.nips.cc/paper_files/paper/2017/hash/f4b9ec30ad9f68f89b29639786cb62ef-Abstract.html)) |
+| Centralized Backdoor Attack | Bagdasaryan et al., 2018 ([link](https://arxiv.org/abs/1807.00459)) |
+| Decentralized Backdoor Attack | Xie et al., 2020 ([link](https://openreview.net/forum?id=rkgyS0VFvr)) |
+| Model Replacement Attack | Bagdasaryan et al., 2018 ([link](https://arxiv.org/abs/1807.00459)) |
+| Direct Model Scaling Attack | Custom implementation |
+| Model Initialization Attack | Custom implementation |
 
 All poisoning attacks are implemented from scratch in this framework, following the methodologies described in the respective publications. Released under Apache 2.0.
+
 
 
 ## Third-Party Frameworks

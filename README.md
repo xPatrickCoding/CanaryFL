@@ -96,6 +96,11 @@ This benchmark uses the following publicly available datasets:
 - [**PathMNIST**](https://medmnist.com/) (Yang et al.), licensed under the Creative Commons Attribution 4.0 International (CC BY 4.0)
 - [**DermaMNIST**](https://medmnist.com/) (Yang et al.), licensed under the Creative Commons Attribution-NonCommercial 4.0 International (CC BY-NC 4.0)
 
-
 The datasets are not redistributed in this repository and are obtained from their official sources.
+
+## Third-Party Frameworks
+
+- [Flower](https://arxiv.org/abs/2007.14390), Apache License 2.0 — used as included, code not modified
+- [PyTorch](https://pytorch.org/), BSD-3-Clause
+- [Hydra](https://hydra.cc/), MIT License
 

@@ -95,7 +95,7 @@ This benchmark uses the following publicly available datasets:
 - [**CIFAR-10**](https://www.cs.toronto.edu/~kriz/learning-features-2009-TR.pdf) (Krizhevsky et al.), available for academic research use  
 - [**PathMNIST**](https://medmnist.com/) (Yang et al.), licensed under the Creative Commons Attribution 4.0 International (CC BY 4.0)
 - [**DermaMNIST**](https://medmnist.com/) (Yang et al.), licensed under the Creative Commons Attribution-NonCommercial 4.0 International (CC BY-NC 4.0)
-- 
+
 The datasets are **not redistributed** in this repository and are obtained from their official sources.
 
 ### Models
@@ -105,6 +105,11 @@ The datasets are **not redistributed** in this repository and are obtained from 
 - **ResNet18** — custom PyTorch implementation following He et al., 2016, all weights trained from scratch
 - **VGG11/13/16/19** (Torchvision, BSD-3-Clause) — architecture used via Torchvision, all weights trained from scratch
 
+### Federated Learning Aggregations
+Aggregation methods are implemented from scratch or using Flower (Apache 2.0). All custom implementations are released under the Apache 2.0 License.
+
+### Poisoning Attacks
+All poisoning attacks are implemented from scratch in this framework, following the methodologies described in the respective publications. Released under Apache 2.0.
 
 
 ## Third-Party Frameworks
